@@ -1,0 +1,104 @@
+.exhibition {
+  &__images {
+    display: grid;
+
+    margin-bottom: 24px;
+
+    gap: 20px;
+    justify-content: center;
+
+    @include onTablet {
+      gap: 24px;
+    }
+
+    &--1 {
+      grid-template-columns: 130px 130px;
+      grid-template-rows: 130px;
+
+      @include onTablet {
+        grid-template-columns: 392px 184px;
+        grid-template-rows: 186px;
+      }
+
+      @include onDesctop {
+        grid-template-columns: 672px 324px;
+        grid-template-rows: 320px;
+      }
+    }
+
+    &--2 {
+      grid-template-columns: 88px 88px 88px;
+      grid-template-rows: 87px;
+
+      gap: 8px;
+
+
+      @include onTablet {
+        grid-template-columns: 288px 288px;
+        grid-template-rows: 284px;
+
+        gap: 24px
+      }
+
+      @include onDesctop {
+        grid-template-columns: 324px 324px 324px;
+        grid-template-rows: 320px;
+      }
+    }
+
+    &--3 {
+      grid-template-columns: 130px 130px;
+      grid-template-rows: 130px;
+
+      @include onTablet {
+        grid-template-columns: 184px 392px;
+        grid-template-rows: 186px;
+      }
+
+      @include onDesctop {
+        grid-template-columns: 324px 672px;
+        grid-template-rows: 320px;
+      }
+    }
+  }
+
+
+  &__image-wrapper {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    &--special {
+      @include onTablet {
+        display: none;
+      }
+
+      @include onDesctop {
+        display: flex;
+      }
+    }
+  }
+
+  &__image {
+    height: 100%;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+
+    color: #D12D35;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+
+    color: #161616;
+  }
+}

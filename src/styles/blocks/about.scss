@@ -1,0 +1,36 @@
+.about {
+  padding-top: 100px;
+
+  &__container {
+    @include onTablet {
+      display: flex;
+
+      justify-content: space-between;
+    }
+  }
+
+  &__titles {
+    margin-bottom: 32px;
+
+    flex-grow: 1;
+  }
+
+  &__subtitle {
+    margin-bottom: 2px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+
+    color: #D12D35;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+
+    color: #161616;
+  }
+}

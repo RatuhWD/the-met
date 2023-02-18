@@ -1,0 +1,22 @@
+.logo {
+  width: 64px;
+
+  @include onTablet {
+    width: 87px;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include onTablet {
+    width: 24px;
+    height: 24px;
+  }
+}

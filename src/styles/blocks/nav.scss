@@ -1,0 +1,93 @@
+.nav {
+  position: fixed;
+  height: 100vh;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #D12D35;
+
+  transform: translateX(-100%);
+
+  &:target {
+    transform: translateX(0);
+  }
+
+  &__container {
+    padding-top: 25px;
+
+    text-transform: uppercase;
+
+    @include onTablet {
+      padding-top: 50px;
+    }
+  }
+
+  &__top {
+    display: flex;
+
+    margin-bottom: 40px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    @include onTablet {
+      margin-bottom: 40px;
+    }
+
+    @include onDesctop {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__mune-close {
+    background-image: url(../images/crab.svg);
+  }
+
+  &__list {
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+  }
+
+  &__item {
+    margin-bottom: 32px;
+
+    &-link {
+      text-decoration: none;
+      color: #fff;
+
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-color: #fff;
+      }
+    }
+  }
+
+  &__phone {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    &--last {
+      display: inline-block;
+
+      font-size: 12px;
+      letter-spacing: 2px;
+
+      border-bottom: 1px solid #fff;
+    }
+  }
+}

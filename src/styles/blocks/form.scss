@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+
+  flex-direction: column;
+
+  &__item {
+    margin-bottom: 16px;
+    padding: 14px 12px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #161616;
+
+    background-color: #F8F8FA;
+    border: 1px solid transparent;
+
+    &::placeholder {
+      color: #7E7E83;
+    }
+
+    &:hover {
+      border-color: #D5D7DE;
+    }
+
+    &:focus {
+      border-color: #161616;
+    }
+
+    &--textarea {
+      margin-bottom: 32px;
+      resize: none;
+    }
+  }
+}

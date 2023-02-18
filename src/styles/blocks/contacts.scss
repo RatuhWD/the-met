@@ -1,0 +1,43 @@
+.contacts {
+  padding: 100px 0;
+
+  &__title {
+    margin-bottom: 48px;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1.5px;
+
+    color: #161616;
+  }
+
+  &__museum-contact {
+    margin-bottom: 48px;
+  }
+
+  &__content {
+    @include onTablet {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include onDesctop {
+      grid-template-columns: 4fr 3fr;
+
+      gap: 80px;
+    }
+  }
+
+  &__text {
+    @include onDesctop {
+      display: grid;
+  
+      grid-template-columns: 1fr 1fr;
+  
+      gap: 24px;
+    }
+  }
+}

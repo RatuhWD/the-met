@@ -1,0 +1,42 @@
+.museum-contact {
+  &__title {
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+
+    color: #161616;
+  }
+
+  &__subtitle {
+    margin-bottom: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+
+    color: #161616;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-decoration: none;
+
+    color: #3E3E3E;
+  }
+
+  &__address-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-decoration: none;
+
+    color: #3E3E3E;
+  }
+}

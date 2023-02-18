@@ -1,0 +1,34 @@
+.explore {
+  display: flex;
+  padding-top: 100px;
+
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 40px;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+    text-align: center;
+
+    color: #161616;
+  }
+
+  &__cards {
+    @include onDesctop {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+
+      justify-content: center;
+    }
+  }
+
+  &__card {
+    margin-bottom: 48px;
+  }
+}

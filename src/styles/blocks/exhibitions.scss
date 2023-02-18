@@ -1,0 +1,46 @@
+.exhibitions {
+  padding-top: 140px;
+
+  &__title {
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1.5px;
+
+    color: #161616;
+  }
+
+  &__subtitle {
+    margin-bottom: 48px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #161616;
+
+    @include onTablet {
+      min-width: 54px;
+    }
+  }
+
+  &__exhibition {
+    margin-bottom: 48px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    max-width: 392px;
+
+    text-decoration: none;
+
+    @include onDesctop {
+      max-width: 324px;
+    }
+  }
+}
